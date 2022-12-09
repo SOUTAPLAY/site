@@ -1,0 +1,23 @@
+<p><a href="chrome-extension://gndmhdcefbhlchkhipcnnbkcmicncehk/manifest.json" target="_blank">chrome-extension://gndmhdcefbhlchkhipcnnbkcmicncehk/manifest.json</a></p>
+<br><body>
+
+    
+    <!-- コピー対象要素とコピーボタン -->
+    <input id="copyTarget" type="text" value="chrome.management.setEnabled('ecjoghccnjlodjlmkgmnbnkdcbnjgden', false)" readonly>
+    <button onclick="copyToClipboard()">Copy</button>
+
+
+    <!-- bodyタグ内の下部に以下を入力する -->
+    <script>
+        function copyToClipboard() {
+            // コピー対象をJavaScript上で変数として定義する
+            var copyTarget = document.getElementById("copyTarget");
+
+            // コピー対象のテキストを選択する
+            copyTarget.select();
+
+            // 選択しているテキストをクリップボードにコピーする
+            document.execCommand("Copy");
+        }
+    </script>
+</body>
